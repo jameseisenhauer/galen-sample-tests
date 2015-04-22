@@ -1,11 +1,14 @@
 Galen Sample Tests
 =====================================
 
-This project is used in order to demonstrate the features of [Galen Framework](http://galenframework.com) and the power of Javascript-based tests
+Install galen ```brew install galen```
 
-The web application that it is testing is [http://testapp.galenframework.com/](http://testapp.galenframework.com/)
+For a test page and server clone this https://github.com/jameseisenhauer/website_test_server
 
-If you have Galen Framework installed you can just checkout this project and run it with the following command:
+
+
+
+run it with the following command:
 
 ```
 galen test tests/ --htmlreport reports

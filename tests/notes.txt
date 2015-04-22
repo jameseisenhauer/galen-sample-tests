@@ -1,0 +1,16 @@
+remote driver appium
+
+var driver = createGridDriver("http://localhost.nike.com:4723/wd/hub", {
+
+    desiredCapabilities: {
+    deviceName: "iPhone 6",
+    platformName: "iOS",
+    platformVersion: "8.3",
+    browserName: "Safari",
+    orientation: "PORTRAIT"
+    }
+  });
+
+
+local driver
+ var driver = createDriver(null, size);

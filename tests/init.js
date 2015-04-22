@@ -1,32 +1,29 @@
 
-var domain = "testapp.galenframework.com";
+var domain = "localhost.nike.com:3000";
 
 var devices = {
-    mobile: {
-        deviceName: "mobile",
+    small: {
+        deviceName: "small",
         size: "450x800",
-        tags: ["mobile"]
+        tags: ["small"]
     },
-    tablet: {
-        deviceName: "tablet",
+    medium: {
+        deviceName: "medium",
         size: "600x800",
-        tags: ["tablet"]
+        tags: ["medium"]
     },
-    desktop: {
-        deviceName: "desktop",
+    large: {
+        deviceName: "large",
         size: "1100x800",
-        tags: ["desktop"]
+        tags: ["large"]
     }
 };
 
-var TEST_USER = {
-    username: "testuser@example.com",
-    password: "test123"
-};
 
 
 function openDriver(url, size) {
-    var driver = createDriver(null, size);
+
+   var driver = createDriver(null, size);
 
     session.put("driver", driver);
 
@@ -81,5 +78,4 @@ function testOnDevice(device, testNamePrefix, url, callback) {
     export.devices = devices;
     export.openDriver = openDriver;
     export.testOnAllDevices = testOnAllDevices;
-    export.TEST_USER = TEST_USER;
 })(this);
